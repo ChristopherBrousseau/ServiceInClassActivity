@@ -38,6 +38,8 @@ class TimerService : Service() {
             }
         }
 
+        fun getService(): TimerService = this@TimerService
+
         fun setHandler(handler: Handler) {
             timerHandler = handler
         }
